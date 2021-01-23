@@ -3,16 +3,10 @@
   <view class="img-big-wrap">
     <view class="button-container">
       <view v-for="(button, index) in buttons" :key="index" class="button-item">
-        <!-- <view catchtouchstart="streamRecord" catchtouchend="endStreamRecord" :data-conf="button" class="button-press"> -->
-		<view v-on:click="streamRecord" :data-conf="button" class="button-press">
+		<view @touchstart="streamRecord" @touchend="endStreamRecord" :data-conf="button" class="button-press">
           <span :class="'text-in-button ' + ( button.buttonType == 'press' ? 'text-press': '' )">{{button.buttonText}}</span>
           <image class="button-background" src="http://www.wetalk.ltd/Users/Oraida/Downloads/test/test/ns2.jpeg"></image>
         </view>
-		
-		<view v-on:click="endStreamRecord" :data-conf="button" class="button-press">
-		  <p>停止</p>
-		</view>
-		
         <view class="button-label">{{button.msg}}</view>
       </view>
 

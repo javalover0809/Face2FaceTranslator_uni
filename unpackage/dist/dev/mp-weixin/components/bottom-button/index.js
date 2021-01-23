@@ -142,19 +142,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
 var _conf = __webpack_require__(/*! ../../utils/conf */ 18); //
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -184,7 +172,13 @@ Unless required by applicable law or agreed to in writing, software distributed 
 // 按钮配置
 _conf.language.forEach(function (item) {buttons.push({ buttonText: item.lang_name, lang: item.lang_content, lto: item.lang_to[0], msg: item.hold_talk, buttonType: 'normal' });}); // 按钮对应图片
 // 按钮对应图片
-var buttonBackground = { zh_CN: { normal: '../../image/button_zh.png', press: '../../image/button_zh_press.png', disabled: '../../image/button_zh_disabled.png' }, en_US: { normal: '../../image/button_en.png', press: '../../image/button_en_press.png', disabled: '../../image/button_en_disabled.png' } };var _default = { data: function data() {return { buttons: buttons, buttonBackground: buttonBackground, currentButtonType: 'normal' };}, components: {}, props: {
+var buttonBackground = { zh_CN: { normal: '../../image/button_zh.png', press: '../../image/button_zh_press.png', disabled: '../../image/button_zh_disabled.png' }, en_US: { normal: '../../image/button_en.png', press: '../../image/button_en_press.png', disabled: '../../image/button_en_disabled.png' } };var _default = { data: function data() {return { buttons: buttons, buttonBackground: buttonBackground,
+      currentButtonType: 'normal' };
+
+  },
+
+  components: {},
+  props: {
     buttonDisabled: {
       type: Boolean,
       default: false } },
