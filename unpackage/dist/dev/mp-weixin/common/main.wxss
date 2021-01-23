@@ -1,0 +1,30 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position:relative;
+  font-family: "PingFang-SC-Regular","SimSun","Microsoft Yahei";
+  -webkit-font-variant-ligatures: none;
+          font-variant-ligatures: none;
+  background-color: #FAFAFA;
+}
+page {
+  height: 100%;
+  width: 100%;
+  background: #FAFAFA;
+}
+input {
+  font-family: "PingFang-SC-Regular","SimSun","Microsoft Yahei";
+}
+
